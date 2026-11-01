@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Lines</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: black;
+        }
+
+        .hero {
+            height: 100vh;
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)),
+                url("https://images.openai.com/static-rsc-4/0YPjbVUAw5jrFyAxzyjXAcRdy3A3R3B9_m_Q-ZubCiqCubmFa_beX2noWjUthNRZTeTVnS5FF_Kfx0lbyW2H4Uwohhjdr65SXflzIh1EN1eG4GwvNVhl-tId2qMXS06_J7pECHMSV386nIk6hlYrRrEAw-s0Z6cWTH6GaTExv4VOWyJhcjyFnQU0b70UJpff?purpose=fullsize");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+
+        .text p {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .serv {
+            letter-spacing: 2px;
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 11px 14px;
+            border-radius: 3px;
+            font-weight: 500;
+            margin: 10px;
+        }
+
+        .serv:hover {
+            background-color: white;
+            color: black;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f5f6fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .services {
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            padding: 50px 20px;
+        }
+
+        .card {
+            width: 325px;
+            background: white;
+            text-align: center;
+
+            position: relative;
+
+            border-radius: 5px;
+            overflow: hidden;
+
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        /* Orange icon */
+
+        .icon {
+            position: absolute;
+            top: 198px;
+            left: 0;
+
+            width: 65px;
+            height: 45px;
+
+            background: orange;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 22px;
+
+            border-radius: 0 25px 25px 0;
+        }
+
+        .card h2 {
+            margin-top: 28px;
+            font-size: 18px;
+            color: #435268;
+        }
+
+        .card p {
+            margin: 20px 25px;
+            color: #777;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .card button {
+            margin: 5px 0 27px;
+
+            padding: 11px 35px;
+
+            border: none;
+            border-radius: 4px;
+
+            background: #5d6e86;
+            color: white;
+
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="text">
+            <h1>WE MAKE STRONGEST</h1>
+            <h1>SERVICE ABOVE THE WORLD</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ad aspernatur, quos repellendus est velit
+            </p>
+            <br>
+            <button class="serv">OUR SERVICE</button>
+            <button class="serv">GET A QUATE</button>
+        </div>
+    </div>
+
+    <section class="services">
+
+        <div class="card">
+            <img src="https://chandradaya-investasi.com/file-storage/UWNYc1ZlN2NQeEMreTQ4cGxocUNURHJwZXhHenZZcW0yOHNEZ1hOeGoyUEs0L2JmaXJ3UnJTOE8xVkFRcnJNYW90cmkwWktxOFZUTDBtS3hhd2x0K1E9PQ" alt="Ocean Freight">
+
+            <div class="icon">⛴︎</div>
+
+            <h2>OCEAN FREIGHT</h2>
+
+            <p>
+                It is a long established fact that a reader will be
+                distracted by the readable content of a page when
+                looking at its layout.
+            </p>
+
+            <button>Read More</button>
+        </div>
+
+
+        <div class="card">
+            <img src="https://cdn.britannica.com/69/155469-050-B561639D/airplane-flight.jpg" alt="Air Freight">
+
+            <div class="icon">✈</div>
+
+            <h2>AIR FREIGHT</h2>
+
+            <p>
+                It is a long established fact that a reader will be
+                distracted by the readable content of a page when
+                looking at its layout.
+            </p>
+
+            <button>Read More</button>
+        </div>
+
+
+        <div class="card">
+            <img src="https://www.knighttrans.com/wp-content/uploads/2024/07/Chris-C.jpg" alt="Street Freight">
+
+            <div class="icon">🚚︎</div>
+
+            <h2>STREET FREIGHT</h2>
+
+            <p>
+                It is a long established fact that a reader will be
+                distracted by the readable content of a page when
+                looking at its layout.
+            </p>
+
+            <button>Read More</button>
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
