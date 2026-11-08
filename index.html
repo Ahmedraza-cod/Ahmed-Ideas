@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <style>
         body {
             background-color: #0F0F1A;
@@ -56,13 +57,14 @@
             border-radius: 8px;
             font-weight: 600;
         }
-        
-        
-        img{
+
+
+        img {
             width: 150px;
             height: 150px;
         }
-        .cs{
+
+        .cs {
             position: relative;
             right: -200px;
             bottom: 70px;
@@ -70,10 +72,103 @@
             background-color: #5d00ff;
             border-radius: 4px;
         }
-        .cs:hover{
+
+        .cs:hover {
             box-shadow: 0 0 30px #5e02ff;
         }
 
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 12px;
+            background-color: #01000477;
+            border-radius: 6px;
+        }
+
+        .about-container img {
+            width: 222px;
+            height: 222px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h1 {
+            margin-bottom: 15px;
+        }
+
+        .about-text p {
+            font-size: 18px;
+        }
+
+        .menu {
+            position: relative;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+
+        .item,
+        button {
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+            position: absolute;
+            left: 59%;
+            transform: translateX(-50%);
+        }
+
+        .main-btn {
+            width: 55px;
+            height: 55px;
+            background: #873cff;
+            color: white;
+            font-size: 25px;
+            z-index: 2;
+            justify-content: center;
+        }
+
+        .item {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #a65aff;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+
+            opacity: 0;
+            transform: translateY(0) scale(0);
+
+            transition: 0.4s ease;
+        }
+
+        .menu.active .item {
+            opacity: 1;
+            transform: translateX(-70px) scale(1);
+        }
+
+        .menu.active .item:nth-child(1) {
+            transform: translateX(-250px);
+        }
+
+        .menu.active .item:nth-child(2) {
+            transform: translateX(-185px);
+        }
+
+        .menu.active .item:nth-child(3) {
+            transform: translateX(-120px);
+        }
+
+        a span {
+            font-size: 24px;
+            color: #1A1A2E;
+
+        }
     </style>
 </head>
 
@@ -81,28 +176,58 @@
 
     <header>
         <h1>AHMED IDEAS</h1>
+        <br><br>
+        <div class="menu">
+            <a href="" class="item"><span><i class="fa-solid fa-house"></i>
+                </span></a>
+            <a href="#br" class="item"><span><i class="fa-solid fa-circle-info"></i></span></a>
+            <a href="" class="item"><span><i class="fa-solid fa-user"></i></span></a>
 
-        <nav>
-            <a href="">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="">Assigments</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="">Assigments Code</a><br><br>
-        </nav>
-    </header>
+            <button class="main-btn" id="toggle">✥</button>
+        </div>
+    </header><br><br>
 
     <div class="hr"></div>
-    
+    <br><br><br><br><br>
     <section class="service">
-    <div class="html">
-        <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="">
-        <a class="cs" href="./html.html">HTML Assigment</a>
-    </div>
-    <br><br>
-    <div class="css">
-        <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" alt="">
-        <a class="cs" href="./css.html">CSS Assigment</a>
-    </div>
-</section>
+        <div class="html">
+            <a href="./html.html"><img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png"
+                    alt=""></a>
+            <a class="cs" href="./html.html">HTML Assigment</a>
+        </div>
+        <br><br>
+        <div class="css">
+            <a href="./css.html"><img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png"
+                    alt=""></a>
+            <a class="cs" href="./css.html">CSS Assigment</a>
+        </div>
+    </section><br><br><br>
 
+    <div class="about-container">
+
+        <img src="http://127.0.0.1:3000/Polished%20Varsity%20Portrait%20with%20Good%20Vibes.png" alt="Ahmed">
+
+        <div class="about-text">
+            <h1>About Me – Ahmed Raza Sheikh</h1>
+
+            <p>
+                Hello! My name is <b>Ahmed Raza Sheikh</b>. I am a passionate and creative learner who is interested in
+                technology and web development. <br><br>
+
+                I am currently learning <b>HTML, CSS, and JavaScript</b> to become a professional web developer. I enjoy
+                creating modern, responsive, and attractive websites. I love exploring new technologies, learning
+                programming skills, and turning creative ideas into reality. <br><br>
+
+                I believe that learning never stops, and every day is a new opportunity to improve my skills and achieve
+                my dreams. <br><br>
+
+                <b id="br">Thank you for visiting my portfolio!</b> <br>
+            </p>
+        </div>
+
+    </div>
+    <br><br><br><br>
+    <script src="./index.js"></script>
 </body>
 
 </html>

@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML</title>
+    <title>Document</title>
     <style>
         body {
             background-color: #0F0F1A;
@@ -35,7 +35,9 @@
         header nav a:hover {
             background-color: #7c3aed;
             box-shadow: 0 0 80px #5e02ff;
+            transform: translateY(-3px);
         }
+
 
         .hr {
             margin: 20px 0;
@@ -56,11 +58,98 @@
             border-radius: 8px;
             font-weight: 600;
         }
+
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .cs {
+            position: relative;
+            right: -200px;
+            bottom: 70px;
+            padding: 8px 10px;
+            background-color: #5d00ff;
+            border-radius: 4px;
+        }
+
+        .cs:hover {
+            box-shadow: 0 0 30px #5e02ff;
+        }
+
+        .txt {
+            text-align: center;
+        }
+
+        .sec {
+            text-align: center;
+            width: 400px;
+            height: 100%;
+            padding: 20px;
+            background-color: rgb(245, 245, 245);
+            box-shadow: 3px 0 10px rgb(27, 27, 27);
+            color: black;
+            border-radius: 7px;
+
+        }
+
+        .s1:hover {
+            border: 3px solid #752af7;
+            transform: translateY(-20px);
+            box-shadow: 0 0 35px #7c3aed;
+        }
+
+        .s2:hover {
+            border: 3px solid #752af7;
+            transform: translateY(-20px);
+            box-shadow: 0 0 35px #7c3aed;
+
+        }
+
+        .s3:hover {
+            border: 3px solid #752af7;
+            transform: translateY(-20px);
+            box-shadow: 0 0 35px #7c3aed;
+
+        }
+
+
+
+        .sec a{
+            color: black;
+            padding: 10px 15px;
+            background-color: #5d00ff;
+            border-radius: 7px;
+            
+        }
+        .sec a:hover{
+            background-color: #752af7;
+            box-shadow: 0 0 30px #7e35fd;
+            border: 1px solid rgb(66, 66, 66);
+        }
+
+        .scontainer {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            justify-content: center;
+        }
+
+        .sec {
+            width: 300px;
+        }
+
+        .s1,
+        .s2,
+        .s3 {
+            transition: all 0.3s ease;
+            
+        }
     </style>
 </head>
 
 <body>
-
     <header>
         <h1>AHMED IDEAS</h1>
 
@@ -72,31 +161,82 @@
     </header>
 
     <div class="hr"></div>
-    <br><br>
+    <br><br><br><br>
+    <div class="scontainer">
+        <div class="sec s1">
+            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="">
+            <div class="txt">
+                <h1>CSS</h1>
+                <a href="/HTML/ASS 1/index.html">
+                    TASK 1
+                </a>
+            </div><br>
+        </div>
+        <div class="sec s2">
+            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="">
+            <div class="txt">
+                <h1>CSS</h1>
+                <a href="./HTML/ASS 2/index.html">
+                    TASK 2
+                </a>
+            </div>
+            <br>
+        </div>
+        <div class="sec s3">
+            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="">
+            <div class="txt">
+                <h1>CSS</h1>
+                <a href="/HTML/Task 1 ludo/index.html">
+                    TASK 3
+                </a>
 
-    <div class="assigment">
+            </div><br>
+        </div>
+    </div><br><br><br><br>
+    <div class="scontainer">
+        <div class="sec s1">
+            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="">
+            <div class="txt">
+                <h1>CSS</h1>
+                <a href="HTML/ASS 4/task.html">
+                    TASK 4
+                </a>
+            </div><br>
+        </div>
+        <div class="sec s2">
+            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="">
+            <div class="txt">
+                <h1>CSS</h1>
+                <a href="/HTML/ASS 5/index.html">
+                    TASK 5
+                </a>
+            </div>
+            <br>
+        </div>
+        <div class="sec s3">
+            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="">
+            <div class="txt">
+                <h1>CSS</h1>
+                <a href="/HTML/ASS 6/table.html">
+                    TASK 6
+                </a>
 
-        <a class="anc" href="./HTML Assigment/ASS 3/">ASS-1</a>
-        <br><br><br>
-        <a class="anc" href="">ASS-1</a>
-        <br><br><br>
-        <a class="anc" href="">ASS-1</a>
-        <br><br><br>
-        <a class="anc" href="">ASS-1</a>
-        <br><br><br>
-        <a class="anc" href="">ASS-1</a>
-        <br><br><br>
-
-        <a class="anc" href="">ASS-2</a>
-        <br><br><br>
-
-        <a class="anc" href="">ASS-3</a>
-        <br>
-
+            </div><br>
+        </div>
+    </div><br><br><br><br>
+    <div class="scontainer">
+        <div class="sec s1">
+            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="">
+            <div class="txt">
+                <h1>CSS</h1>
+                <a href="/HTML/ASs 7 final task/index.html">
+                    TASK 7
+                </a>
+            </div><br>
+        </div>
+       
     </div>
 
-
-
-
 </body>
+
 </html>
